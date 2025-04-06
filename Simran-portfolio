@@ -5,14 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simran Rajput | Data & Business Analyst</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f8f8f8; color: #333; }
-    header { background: #2b2b2b; color: white; padding: 2rem 1rem; text-align: center; }
-    section { max-width: 900px; margin: auto; padding: 2rem 1rem; background: white; margin-bottom: 1rem; border-radius: 10px; }
-    h1, h2 { color: #222; }
-    ul { padding-left: 1.2rem; }
-    .contact { font-size: 0.9rem; margin-top: 0.5rem; }
-    .link { color: #0073e6; text-decoration: none; }
-    .link:hover { text-decoration: underline; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+      background: white;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+    h1, h2, h3 {
+      color: #003366;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .contact {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+    .link {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #0073e6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .download-btn:hover {
+      background: #005bb5;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background: #003366;
+      color: white;
+      padding: 0.7rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #005bb5;
+    }
+    @media screen and (max-width: 600px) {
+      body { font-size: 0.95rem; }
+      header h1 { font-size: 1.6rem; }
+    }
   </style>
 </head>
 <body>
@@ -24,11 +94,14 @@
       <a class="link" href="https://github.com/Shimrran05">GitHub</a> |
       <a class="link" href="#">LinkedIn</a>
     </div>
+    <a class="download-btn" href="Simran_Resume.pdf" download>Download Resume</a>
   </header>
+
   <section>
-    <h2>Professional Summary</h2>
-    <p>Results-driven analyst with 4+ years of experience in data analytics, technical support, and BI reporting. Skilled in SQL, Excel, Tableau, Power BI, and Python for extracting insights and optimizing business decisions. Proven record of improving data pipelines, creating dashboards, and aligning analytics with strategic goals.</p>
+    <h2>About Me</h2>
+    <p>I am a marketing professional turned data enthusiast with a passion for uncovering insights that drive smarter decisions. With 4+ years of cross-functional experience, I've transitioned into business analytics by mastering tools like SQL, Power BI, Excel, and Tableau. My marketing background gives me a strong sense of user behavior and strategy, while my technical skills allow me to extract, analyze, and visualize data to support business growth. I blend storytelling with data to influence outcomes and optimize performance.</p>
   </section>
+
   <section>
     <h2>Professional Experience</h2>
     <h3>Senior Data & Reporting Analyst – Australian Unity (Nov 2022 – Jul 2024)</h3>
@@ -48,6 +121,7 @@
       <li>Maintained client records and participated in incident analysis.</li>
     </ul>
   </section>
+
   <section>
     <h2>Projects</h2>
     <ul>
@@ -55,12 +129,14 @@
       <li><strong>Malicious URL Detection:</strong> Python-based ML model to identify unsafe URLs.</li>
     </ul>
   </section>
+
   <section>
     <h2>Education</h2>
     <p><strong>B.Tech, Computer Science & Engineering</strong><br />
     Stanley College of Engineering & Technology for Women (Osmania University)<br />
     GPA: 7.9/10 | Graduated July 2019</p>
   </section>
+
   <section>
     <h2>Technical Skills</h2>
     <ul>
@@ -69,6 +145,16 @@
       <li>Data Cleaning, ETL, Data Modeling</li>
       <li>HTML, Git, Agile Tools (Jira, Confluence)</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 </body>
 </html>
